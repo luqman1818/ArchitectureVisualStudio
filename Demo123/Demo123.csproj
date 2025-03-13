@@ -46,17 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjoutUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutUser.Designer.cs">
+      <DependentUpon>AjoutUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAjoutMaillot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutMaillot.Designer.cs">
+      <DependentUpon>frmAjoutMaillot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifMaillot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifMaillot.Designer.cs">
+      <DependentUpon>frmModifMaillot.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maillot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Maillot.Designer.cs">
       <DependentUpon>Maillot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifUser.Designer.cs">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,11 +90,23 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AjoutUser.resx">
+      <DependentUpon>AjoutUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutMaillot.resx">
+      <DependentUpon>frmAjoutMaillot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifMaillot.resx">
+      <DependentUpon>frmModifMaillot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Maillot.resx">
       <DependentUpon>Maillot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifUser.resx">
+      <DependentUpon>ModifUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -34,7 +34,14 @@ namespace Demo123
 
         private void button1_Click(object sender, EventArgs e)
         {
+            frmAjoutUser f=new frmAjoutUser();
+            f.Show();
+        }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frmModifUser f=new frmModifUser();
+            f.Show();
         }
     }
 }

@@ -33,6 +33,7 @@
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.taille = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAjoutMaillot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +80,21 @@
             this.taille.Name = "taille";
             this.taille.Width = 150;
             // 
+            // btnAjoutMaillot
+            // 
+            this.btnAjoutMaillot.Location = new System.Drawing.Point(426, 401);
+            this.btnAjoutMaillot.Name = "btnAjoutMaillot";
+            this.btnAjoutMaillot.Size = new System.Drawing.Size(153, 40);
+            this.btnAjoutMaillot.TabIndex = 1;
+            this.btnAjoutMaillot.Text = "ajouter des maillots";
+            this.btnAjoutMaillot.UseVisualStyleBackColor = true;
+            // 
             // frmMaillot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 520);
+            this.Controls.Add(this.btnAjoutMaillot);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmMaillot";
             this.Text = "Maillot";
@@ -100,5 +111,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn prix;
         private System.Windows.Forms.DataGridViewTextBoxColumn taille;
+        private System.Windows.Forms.Button btnAjoutMaillot;
     }
 }

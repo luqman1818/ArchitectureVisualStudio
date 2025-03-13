@@ -35,5 +35,10 @@ namespace Demo123
            m.MdiParent = this;
            m.Show();
         }
+
+        private void frmApp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

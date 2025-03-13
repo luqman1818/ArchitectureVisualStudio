@@ -52,7 +52,7 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(169, 30);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(169, 29);
             this.ouvrirToolStripMenuItem.Text = "Gestion utilisateur";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
@@ -79,6 +79,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmApp";
             this.Text = "Application";
+            this.Load += new System.EventHandler(this.frmApp_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
