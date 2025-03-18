@@ -78,7 +78,13 @@ namespace Demo123
 
         private void dgvUser_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
         {
-
+            if(e.RowIndex >= 0)
+            {
+                using( frmModifUser f=new frmModifUser())
+                {
+                    f.ShowDialog();
+                }
+            }
         }
     }
 }

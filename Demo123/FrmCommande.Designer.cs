@@ -52,6 +52,7 @@
             this.dgvCommande.RowTemplate.Height = 28;
             this.dgvCommande.Size = new System.Drawing.Size(978, 172);
             this.dgvCommande.TabIndex = 0;
+            this.dgvCommande.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCommande_CellContentClick);
             // 
             // id
             // 
@@ -96,6 +97,7 @@
             this.Controls.Add(this.dgvCommande);
             this.Name = "FrmCommande";
             this.Text = "FrmCommande";
+            this.Load += new System.EventHandler(this.FrmCommande_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCommande)).EndInit();
             this.ResumeLayout(false);
 

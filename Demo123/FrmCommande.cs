@@ -16,5 +16,17 @@ namespace Demo123
         {
             InitializeComponent();
         }
+
+        private void dgvCommande_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FrmCommande_Load(object sender, EventArgs e)
+        {
+            dgvCommande.Rows.Add("1","1" ,"Chelsea", "S", "80");
+            dgvCommande.Rows.Add("2", "2", "Ac Milan", "S", "90");
+            dgvCommande.Rows.Add("3", "3", "Real Madrid", "L", "80");
+        }
     }
 }
