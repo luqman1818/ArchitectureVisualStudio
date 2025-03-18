@@ -88,6 +88,7 @@
             this.btnAjoutMaillot.TabIndex = 1;
             this.btnAjoutMaillot.Text = "ajouter des maillots";
             this.btnAjoutMaillot.UseVisualStyleBackColor = true;
+            this.btnAjoutMaillot.Click += new System.EventHandler(this.btnAjoutMaillot_Click);
             // 
             // frmMaillot
             // 

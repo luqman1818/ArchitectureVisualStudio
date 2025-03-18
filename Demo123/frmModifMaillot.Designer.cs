@@ -94,6 +94,7 @@
             this.btnValider.TabIndex = 6;
             this.btnValider.Text = "valider";
             this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // frmModifMaillot
             // 

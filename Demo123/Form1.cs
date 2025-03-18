@@ -40,5 +40,11 @@ namespace Demo123
         {
 
         }
+
+        private void gestionCommandeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCommande f= new FrmCommande();
+            f.Show();
+        }
     }
 }

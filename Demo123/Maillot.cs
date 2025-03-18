@@ -21,5 +21,11 @@ namespace Demo123
         {
 
         }
+
+        private void btnAjoutMaillot_Click(object sender, EventArgs e)
+        {
+            frmAjoutMaillot frm = new frmAjoutMaillot();
+            frm.Show();
+        }
     }
 }

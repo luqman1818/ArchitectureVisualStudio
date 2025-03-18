@@ -68,6 +68,7 @@
             this.gestionCommandeToolStripMenuItem.Name = "gestionCommandeToolStripMenuItem";
             this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(183, 29);
             this.gestionCommandeToolStripMenuItem.Text = "Gestion commande";
+            this.gestionCommandeToolStripMenuItem.Click += new System.EventHandler(this.gestionCommandeToolStripMenuItem_Click);
             // 
             // frmApp
             // 

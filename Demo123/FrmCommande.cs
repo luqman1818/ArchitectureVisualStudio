@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Demo123
 {
-    public partial class frmModifMaillot : Form
+    public partial class FrmCommande : Form
     {
-        public frmModifMaillot()
+        public FrmCommande()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnValider_Click(object sender, EventArgs e)
-        {
-         
         }
     }
 }

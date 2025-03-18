@@ -43,5 +43,10 @@ namespace Demo123
             frmModifUser f=new frmModifUser();
             f.Show();
         }
+
+        private void dgvUser_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+         
+        }
     }
 }

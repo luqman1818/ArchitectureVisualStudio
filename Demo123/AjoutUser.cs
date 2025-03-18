@@ -24,8 +24,7 @@ namespace Demo123
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            frmUser f=new frmUser();
-            f.Show();
+            this.Close();
         }
     }
 }
