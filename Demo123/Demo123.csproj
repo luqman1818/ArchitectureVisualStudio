@@ -114,6 +114,9 @@
     <EmbeddedResource Include="FrmCommande.resx">
       <DependentUpon>FrmCommande.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnexion.resx">
+      <DependentUpon>FrmConnexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModifMaillot.resx">
       <DependentUpon>frmModifMaillot.cs</DependentUpon>
     </EmbeddedResource>

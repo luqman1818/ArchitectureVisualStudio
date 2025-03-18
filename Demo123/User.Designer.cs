@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnAjout = new System.Windows.Forms.Button();
+            this.btnModifUser = new System.Windows.Forms.Button();
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,10 +38,28 @@
             this.adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.localite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mdp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAjout = new System.Windows.Forms.Button();
-            this.btnModifUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnAjout
+            // 
+            this.btnAjout.Location = new System.Drawing.Point(821, 351);
+            this.btnAjout.Name = "btnAjout";
+            this.btnAjout.Size = new System.Drawing.Size(97, 59);
+            this.btnAjout.TabIndex = 1;
+            this.btnAjout.Text = "ajouter utilisateur";
+            this.btnAjout.UseVisualStyleBackColor = true;
+            this.btnAjout.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnModifUser
+            // 
+            this.btnModifUser.Location = new System.Drawing.Point(568, 360);
+            this.btnModifUser.Name = "btnModifUser";
+            this.btnModifUser.Size = new System.Drawing.Size(135, 50);
+            this.btnModifUser.TabIndex = 2;
+            this.btnModifUser.Text = "modifier utilisateur";
+            this.btnModifUser.UseVisualStyleBackColor = true;
+            this.btnModifUser.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dgvUser
             // 
@@ -52,13 +72,13 @@
             this.adresse,
             this.localite,
             this.mdp});
-            this.dgvUser.Location = new System.Drawing.Point(23, 58);
+            this.dgvUser.Location = new System.Drawing.Point(86, 128);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersWidth = 62;
             this.dgvUser.RowTemplate.Height = 28;
-            this.dgvUser.Size = new System.Drawing.Size(1106, 150);
-            this.dgvUser.TabIndex = 0;
-            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick_1);
+            this.dgvUser.Size = new System.Drawing.Size(1051, 150);
+            this.dgvUser.TabIndex = 3;
+            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick_2);
             // 
             // id
             // 
@@ -97,7 +117,7 @@
             // 
             // localite
             // 
-            this.localite.HeaderText = "localité";
+            this.localite.HeaderText = "localite";
             this.localite.MinimumWidth = 8;
             this.localite.Name = "localite";
             this.localite.Width = 150;
@@ -109,34 +129,14 @@
             this.mdp.Name = "mdp";
             this.mdp.Width = 150;
             // 
-            // btnAjout
-            // 
-            this.btnAjout.Location = new System.Drawing.Point(821, 351);
-            this.btnAjout.Name = "btnAjout";
-            this.btnAjout.Size = new System.Drawing.Size(97, 59);
-            this.btnAjout.TabIndex = 1;
-            this.btnAjout.Text = "ajouter utilisateur";
-            this.btnAjout.UseVisualStyleBackColor = true;
-            this.btnAjout.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnModifUser
-            // 
-            this.btnModifUser.Location = new System.Drawing.Point(568, 360);
-            this.btnModifUser.Name = "btnModifUser";
-            this.btnModifUser.Size = new System.Drawing.Size(135, 50);
-            this.btnModifUser.TabIndex = 2;
-            this.btnModifUser.Text = "modifier utilisateur";
-            this.btnModifUser.UseVisualStyleBackColor = true;
-            this.btnModifUser.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 526);
+            this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.btnModifUser);
             this.Controls.Add(this.btnAjout);
-            this.Controls.Add(this.dgvUser);
             this.Name = "frmUser";
             this.Text = "User";
             this.Load += new System.EventHandler(this.frmUser_Load);
@@ -146,7 +146,8 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.Button btnAjout;
+        private System.Windows.Forms.Button btnModifUser;
         private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenom;
@@ -155,7 +156,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn adresse;
         private System.Windows.Forms.DataGridViewTextBoxColumn localite;
         private System.Windows.Forms.DataGridViewTextBoxColumn mdp;
-        private System.Windows.Forms.Button btnAjout;
-        private System.Windows.Forms.Button btnModifUser;
     }
 }

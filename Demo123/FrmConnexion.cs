@@ -16,5 +16,11 @@ namespace Demo123
         {
             InitializeComponent();
         }
+
+        private void btnConnexion_Click(object sender, EventArgs e)
+        {
+            frmApp f=new frmApp();
+            f.Show();
+        }
     }
 }
