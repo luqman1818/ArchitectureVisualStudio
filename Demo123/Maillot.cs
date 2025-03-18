@@ -33,7 +33,13 @@ namespace Demo123
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if(e.RowIndex >= 0)
+            {
+                using(frmModifMaillot frmModifMaillot = new frmModifMaillot())
+                {
+                    frmModifMaillot.ShowDialog();
+                }
+            }
         }
     }
 }
