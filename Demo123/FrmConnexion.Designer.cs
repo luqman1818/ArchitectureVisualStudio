@@ -50,7 +50,7 @@
             this.lblMdp.Location = new System.Drawing.Point(78, 169);
             this.lblMdp.Name = "lblMdp";
             this.lblMdp.Size = new System.Drawing.Size(105, 20);
-            this.lblMdp.TabIndex = 1;
+            this.lblMdp.TabIndex = 2;
             this.lblMdp.Text = "mot de passe";
             // 
             // txtNom
@@ -58,7 +58,7 @@
             this.txtNom.Location = new System.Drawing.Point(303, 89);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(100, 26);
-            this.txtNom.TabIndex = 2;
+            this.txtNom.TabIndex = 1;
             // 
             // txtMdp
             // 

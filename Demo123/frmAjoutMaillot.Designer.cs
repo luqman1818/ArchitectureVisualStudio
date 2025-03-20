@@ -53,7 +53,7 @@
             this.lblPrix.Location = new System.Drawing.Point(86, 129);
             this.lblPrix.Name = "lblPrix";
             this.lblPrix.Size = new System.Drawing.Size(33, 20);
-            this.lblPrix.TabIndex = 1;
+            this.lblPrix.TabIndex = 2;
             this.lblPrix.Text = "prix";
             // 
             // lblTaille
@@ -62,7 +62,7 @@
             this.lblTaille.Location = new System.Drawing.Point(90, 183);
             this.lblTaille.Name = "lblTaille";
             this.lblTaille.Size = new System.Drawing.Size(41, 20);
-            this.lblTaille.TabIndex = 2;
+            this.lblTaille.TabIndex = 4;
             this.lblTaille.Text = "taille";
             // 
             // txtNom
@@ -70,14 +70,14 @@
             this.txtNom.Location = new System.Drawing.Point(235, 76);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(100, 26);
-            this.txtNom.TabIndex = 3;
+            this.txtNom.TabIndex = 1;
             // 
             // txtPrix
             // 
             this.txtPrix.Location = new System.Drawing.Point(235, 129);
             this.txtPrix.Name = "txtPrix";
             this.txtPrix.Size = new System.Drawing.Size(100, 26);
-            this.txtPrix.TabIndex = 4;
+            this.txtPrix.TabIndex = 3;
             // 
             // txtTaille
             // 

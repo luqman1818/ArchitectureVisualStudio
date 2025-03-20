@@ -29,5 +29,16 @@ namespace Demo123
             frmAjoutEmploye frmAjoutEmploye = new frmAjoutEmploye();
             frmAjoutEmploye.Show();
         }
+
+        private void dgvEmploye_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                using( frmModifEmploye f=new frmModifEmploye())
+                {
+                    f.ShowDialog();
+                }
+            }
+        }
     }
 }
