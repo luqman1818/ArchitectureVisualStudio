@@ -38,6 +38,7 @@
             this.mdp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnModifier = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmploye)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,11 +128,22 @@
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
+            // btnModifier
+            // 
+            this.btnModifier.Location = new System.Drawing.Point(851, 343);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(94, 48);
+            this.btnModifier.TabIndex = 2;
+            this.btnModifier.Text = "modifier";
+            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
+            // 
             // frmEmploye
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 450);
+            this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.dgvEmploye);
             this.Name = "frmEmploye";
@@ -154,5 +166,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mdp;
         private System.Windows.Forms.DataGridViewTextBoxColumn role;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnModifier;
     }
 }

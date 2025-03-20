@@ -12,14 +12,23 @@ namespace Demo123
 {
     public partial class frmAjoutEmploye : Form
     {
-        public frmAjoutEmploye()
+        public frmAjoutEmploye(Boolean modif =false)
         {
             InitializeComponent();
+            
+            BtnSupprimer.Visible = !modif;
+            btnMettreAJour.Visible = !modif;
+            btvAjouter.Visible = modif;
         }
 
         private void btvValider_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmAjoutEmploye_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

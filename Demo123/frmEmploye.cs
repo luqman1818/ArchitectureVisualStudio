@@ -26,7 +26,7 @@ namespace Demo123
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            frmAjoutEmploye frmAjoutEmploye = new frmAjoutEmploye();
+            frmAjoutEmploye frmAjoutEmploye = new frmAjoutEmploye(true);
             frmAjoutEmploye.Show();
         }
 
@@ -34,11 +34,16 @@ namespace Demo123
         {
             if(e.RowIndex >= 0)
             {
-                using( frmModifEmploye f=new frmModifEmploye())
+                using( frmAjoutEmploye f=new frmAjoutEmploye())
                 {
                     f.ShowDialog();
                 }
             }
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            frmAjoutEmploye f = new frmAjoutEmploye();f.ShowDialog();
         }
     }
 }
