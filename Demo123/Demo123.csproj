@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAjoutEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutEmploye.Designer.cs">
+      <DependentUpon>frmAjoutEmploye.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAjoutMaillot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="FrmConnexion.Designer.cs">
       <DependentUpon>FrmConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmploye.Designer.cs">
+      <DependentUpon>frmEmploye.cs</DependentUpon>
     </Compile>
     <Compile Include="frmModifMaillot.cs">
       <SubType>Form</SubType>
@@ -108,6 +120,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutEmploye.resx">
+      <DependentUpon>frmAjoutEmploye.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutMaillot.resx">
       <DependentUpon>frmAjoutMaillot.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConnexion.resx">
       <DependentUpon>FrmConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmploye.resx">
+      <DependentUpon>frmEmploye.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModifMaillot.resx">
       <DependentUpon>frmModifMaillot.cs</DependentUpon>

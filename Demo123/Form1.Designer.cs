@@ -32,6 +32,7 @@
             this.ouvrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionMaillotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionCommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionEmployéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +43,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ouvrirToolStripMenuItem,
             this.gestionMaillotToolStripMenuItem,
-            this.gestionCommandeToolStripMenuItem});
+            this.gestionCommandeToolStripMenuItem,
+            this.gestionEmployéToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 33);
@@ -70,6 +72,13 @@
             this.gestionCommandeToolStripMenuItem.Text = "Gestion commande";
             this.gestionCommandeToolStripMenuItem.Click += new System.EventHandler(this.gestionCommandeToolStripMenuItem_Click);
             // 
+            // gestionEmployéToolStripMenuItem
+            // 
+            this.gestionEmployéToolStripMenuItem.Name = "gestionEmployéToolStripMenuItem";
+            this.gestionEmployéToolStripMenuItem.Size = new System.Drawing.Size(162, 29);
+            this.gestionEmployéToolStripMenuItem.Text = "Gestion employé";
+            this.gestionEmployéToolStripMenuItem.Click += new System.EventHandler(this.gestionEmployéToolStripMenuItem_Click);
+            // 
             // frmApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -94,6 +103,7 @@
         private System.Windows.Forms.ToolStripMenuItem ouvrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionMaillotToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionCommandeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionEmployéToolStripMenuItem;
     }
 }
 

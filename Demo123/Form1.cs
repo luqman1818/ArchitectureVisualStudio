@@ -46,5 +46,11 @@ namespace Demo123
             FrmCommande f= new FrmCommande();
             f.Show();
         }
+
+        private void gestionEmployéToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmploye frm  = new frmEmploye();
+            frm.Show();
+        }
     }
 }
