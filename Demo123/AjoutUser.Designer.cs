@@ -194,6 +194,7 @@
             this.Controls.Add(this.lblPrenom);
             this.Name = "frmAjoutUser";
             this.Text = "AjoutUser";
+            this.Load += new System.EventHandler(this.frmAjoutUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

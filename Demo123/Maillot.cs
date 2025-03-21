@@ -27,7 +27,7 @@ namespace Demo123
 
         private void btnAjoutMaillot_Click(object sender, EventArgs e)
         {
-            frmAjoutMaillot frm = new frmAjoutMaillot();
+            frmAjoutMaillot frm = new frmAjoutMaillot(true);
             frm.Show();
         }
 
@@ -35,9 +35,9 @@ namespace Demo123
         {
             if(e.RowIndex >= 0)
             {
-                using(frmModifMaillot frmModifMaillot = new frmModifMaillot())
+                using(frmAjoutMaillot frmAjoutMaillot = new frmAjoutMaillot())
                 {
-                    frmModifMaillot.ShowDialog();
+                    frmAjoutMaillot.ShowDialog();
                 }
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace Demo123
 {
-    partial class frmAjoutMaillot
+    partial class frmAjoutCommande
     {
         /// <summary>
         /// Required designer variable.
@@ -28,97 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNom = new System.Windows.Forms.Label();
-            this.lblPrix = new System.Windows.Forms.Label();
+            this.lblNomClub = new System.Windows.Forms.Label();
             this.lblTaille = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtPrix = new System.Windows.Forms.TextBox();
+            this.lblPrix = new System.Windows.Forms.Label();
+            this.txtNomClub = new System.Windows.Forms.TextBox();
             this.txtTaille = new System.Windows.Forms.TextBox();
+            this.txtPrix = new System.Windows.Forms.TextBox();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnMettreAJour = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblNom
+            // lblNomClub
             // 
-            this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(86, 82);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(40, 20);
-            this.lblNom.TabIndex = 0;
-            this.lblNom.Text = "nom";
-            this.lblNom.Click += new System.EventHandler(this.label1_Click);
+            this.lblNomClub.AutoSize = true;
+            this.lblNomClub.Location = new System.Drawing.Point(103, 64);
+            this.lblNomClub.Name = "lblNomClub";
+            this.lblNomClub.Size = new System.Drawing.Size(73, 20);
+            this.lblNomClub.TabIndex = 0;
+            this.lblNomClub.Text = "nom club";
+            // 
+            // lblTaille
+            // 
+            this.lblTaille.AutoSize = true;
+            this.lblTaille.Location = new System.Drawing.Point(107, 135);
+            this.lblTaille.Name = "lblTaille";
+            this.lblTaille.Size = new System.Drawing.Size(41, 20);
+            this.lblTaille.TabIndex = 1;
+            this.lblTaille.Text = "taille";
             // 
             // lblPrix
             // 
             this.lblPrix.AutoSize = true;
-            this.lblPrix.Location = new System.Drawing.Point(86, 129);
+            this.lblPrix.Location = new System.Drawing.Point(107, 210);
             this.lblPrix.Name = "lblPrix";
             this.lblPrix.Size = new System.Drawing.Size(33, 20);
             this.lblPrix.TabIndex = 2;
             this.lblPrix.Text = "prix";
             // 
-            // lblTaille
+            // txtNomClub
             // 
-            this.lblTaille.AutoSize = true;
-            this.lblTaille.Location = new System.Drawing.Point(90, 183);
-            this.lblTaille.Name = "lblTaille";
-            this.lblTaille.Size = new System.Drawing.Size(41, 20);
-            this.lblTaille.TabIndex = 4;
-            this.lblTaille.Text = "taille";
-            // 
-            // txtNom
-            // 
-            this.txtNom.Location = new System.Drawing.Point(235, 76);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(100, 26);
-            this.txtNom.TabIndex = 1;
-            // 
-            // txtPrix
-            // 
-            this.txtPrix.Location = new System.Drawing.Point(235, 129);
-            this.txtPrix.Name = "txtPrix";
-            this.txtPrix.Size = new System.Drawing.Size(100, 26);
-            this.txtPrix.TabIndex = 3;
+            this.txtNomClub.Location = new System.Drawing.Point(271, 57);
+            this.txtNomClub.Name = "txtNomClub";
+            this.txtNomClub.Size = new System.Drawing.Size(100, 26);
+            this.txtNomClub.TabIndex = 3;
             // 
             // txtTaille
             // 
-            this.txtTaille.Location = new System.Drawing.Point(235, 183);
+            this.txtTaille.Location = new System.Drawing.Point(271, 135);
             this.txtTaille.Name = "txtTaille";
             this.txtTaille.Size = new System.Drawing.Size(100, 26);
-            this.txtTaille.TabIndex = 5;
+            this.txtTaille.TabIndex = 4;
+            // 
+            // txtPrix
+            // 
+            this.txtPrix.Location = new System.Drawing.Point(271, 204);
+            this.txtPrix.Name = "txtPrix";
+            this.txtPrix.Size = new System.Drawing.Size(100, 26);
+            this.txtPrix.TabIndex = 5;
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(529, 82);
+            this.btnAjouter.Location = new System.Drawing.Point(541, 64);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(121, 56);
+            this.btnAjouter.Size = new System.Drawing.Size(111, 41);
             this.btnAjouter.TabIndex = 6;
-            this.btnAjouter.Text = "ajouter";
+            this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
-            this.btnAjouter.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // btnMettreAJour
             // 
-            this.btnMettreAJour.Location = new System.Drawing.Point(529, 185);
+            this.btnMettreAJour.Location = new System.Drawing.Point(541, 135);
             this.btnMettreAJour.Name = "btnMettreAJour";
-            this.btnMettreAJour.Size = new System.Drawing.Size(121, 48);
+            this.btnMettreAJour.Size = new System.Drawing.Size(95, 34);
             this.btnMettreAJour.TabIndex = 7;
             this.btnMettreAJour.Text = "Mettre à jour";
             this.btnMettreAJour.UseVisualStyleBackColor = true;
-            this.btnMettreAJour.Click += new System.EventHandler(this.btnMettreAJour_Click);
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(529, 278);
+            this.btnSupprimer.Location = new System.Drawing.Point(541, 210);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(121, 45);
+            this.btnSupprimer.Size = new System.Drawing.Size(107, 33);
             this.btnSupprimer.TabIndex = 8;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
-            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
-            // frmAjoutMaillot
+            // frmAjoutCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,15 +122,14 @@
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnMettreAJour);
             this.Controls.Add(this.btnAjouter);
-            this.Controls.Add(this.txtTaille);
             this.Controls.Add(this.txtPrix);
-            this.Controls.Add(this.txtNom);
-            this.Controls.Add(this.lblTaille);
+            this.Controls.Add(this.txtTaille);
+            this.Controls.Add(this.txtNomClub);
             this.Controls.Add(this.lblPrix);
-            this.Controls.Add(this.lblNom);
-            this.Name = "frmAjoutMaillot";
-            this.Text = "frmAjoutMaillot";
-            this.Load += new System.EventHandler(this.frmAjoutMaillot_Load);
+            this.Controls.Add(this.lblTaille);
+            this.Controls.Add(this.lblNomClub);
+            this.Name = "frmAjoutCommande";
+            this.Text = "frmAjoutCommande";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,12 +137,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblNom;
-        private System.Windows.Forms.Label lblPrix;
+        private System.Windows.Forms.Label lblNomClub;
         private System.Windows.Forms.Label lblTaille;
-        private System.Windows.Forms.TextBox txtNom;
-        private System.Windows.Forms.TextBox txtPrix;
+        private System.Windows.Forms.Label lblPrix;
+        private System.Windows.Forms.TextBox txtNomClub;
         private System.Windows.Forms.TextBox txtTaille;
+        private System.Windows.Forms.TextBox txtPrix;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnMettreAJour;
         private System.Windows.Forms.Button btnSupprimer;

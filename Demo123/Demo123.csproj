@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAjoutCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjoutCommande.Designer.cs">
+      <DependentUpon>frmAjoutCommande.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAjoutEmploye.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAjoutCommande.resx">
+      <DependentUpon>frmAjoutCommande.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAjoutEmploye.resx">
       <DependentUpon>frmAjoutEmploye.cs</DependentUpon>

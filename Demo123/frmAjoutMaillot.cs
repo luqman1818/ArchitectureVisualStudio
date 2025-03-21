@@ -12,9 +12,12 @@ namespace Demo123
 {
     public partial class frmAjoutMaillot : Form
     {
-        public frmAjoutMaillot()
+        public frmAjoutMaillot(Boolean modif = false)
         {
             InitializeComponent();
+            btnMettreAJour.Visible = !modif;
+            btnSupprimer.Visible = !modif;
+            btnAjouter.Visible = modif;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,6 +31,16 @@ namespace Demo123
         }
 
         private void btnValider_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMettreAJour_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
         {
             this.Close();
         }

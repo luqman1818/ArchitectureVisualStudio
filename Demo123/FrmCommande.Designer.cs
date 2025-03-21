@@ -34,6 +34,7 @@
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.taille = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAjouter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCommande)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,11 +90,22 @@
             this.prix.Name = "prix";
             this.prix.Width = 150;
             // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Location = new System.Drawing.Point(688, 332);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(164, 47);
+            this.btnAjouter.TabIndex = 1;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
             // FrmCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1132, 450);
+            this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.dgvCommande);
             this.Name = "FrmCommande";
             this.Text = "FrmCommande";
@@ -111,5 +123,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn taille;
         private System.Windows.Forms.DataGridViewTextBoxColumn prix;
+        private System.Windows.Forms.Button btnAjouter;
     }
 }

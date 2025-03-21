@@ -40,5 +40,10 @@ namespace Demo123
         {
             this.Close();
         }
+
+        private void frmAjoutUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

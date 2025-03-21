@@ -19,7 +19,13 @@ namespace Demo123
 
         private void dgvCommande_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0)
+            {
+                using (frmAjoutCommande frmAjoutCommande = new frmAjoutCommande())
+                {
+                    frmAjoutCommande.ShowDialog();
+                }
+            }
         }
 
         private void FrmCommande_Load(object sender, EventArgs e)
@@ -27,6 +33,12 @@ namespace Demo123
             dgvCommande.Rows.Add("1","1" ,"Chelsea", "S", "80");
             dgvCommande.Rows.Add("2", "2", "Ac Milan", "S", "90");
             dgvCommande.Rows.Add("3", "3", "Real Madrid", "L", "80");
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            frmAjoutCommande frmAjoutCommande   = new frmAjoutCommande();
+            frmAjoutCommande.Show();
         }
     }
 }
