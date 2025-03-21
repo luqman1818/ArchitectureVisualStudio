@@ -43,7 +43,7 @@
             this.btnAjoutMaillot.Name = "btnAjoutMaillot";
             this.btnAjoutMaillot.Size = new System.Drawing.Size(153, 40);
             this.btnAjoutMaillot.TabIndex = 1;
-            this.btnAjoutMaillot.Text = "ajouter des maillots";
+            this.btnAjoutMaillot.Text = "&Ajouter des maillots";
             this.btnAjoutMaillot.UseVisualStyleBackColor = true;
             this.btnAjoutMaillot.Click += new System.EventHandler(this.btnAjoutMaillot_Click);
             // 

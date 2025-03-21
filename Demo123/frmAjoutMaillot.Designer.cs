@@ -94,7 +94,7 @@
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(121, 56);
             this.btnAjouter.TabIndex = 6;
-            this.btnAjouter.Text = "ajouter";
+            this.btnAjouter.Text = "&Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnValider_Click);
             // 
@@ -104,7 +104,7 @@
             this.btnMettreAJour.Name = "btnMettreAJour";
             this.btnMettreAJour.Size = new System.Drawing.Size(121, 48);
             this.btnMettreAJour.TabIndex = 7;
-            this.btnMettreAJour.Text = "Mettre à jour";
+            this.btnMettreAJour.Text = "&Mettre à jour";
             this.btnMettreAJour.UseVisualStyleBackColor = true;
             this.btnMettreAJour.Click += new System.EventHandler(this.btnMettreAJour_Click);
             // 
@@ -114,7 +114,7 @@
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(121, 45);
             this.btnSupprimer.TabIndex = 8;
-            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.Text = "&Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 

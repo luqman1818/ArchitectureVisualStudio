@@ -96,7 +96,7 @@
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(164, 47);
             this.btnAjouter.TabIndex = 1;
-            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.Text = "&Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 

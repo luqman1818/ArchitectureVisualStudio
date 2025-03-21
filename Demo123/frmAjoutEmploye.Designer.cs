@@ -183,7 +183,7 @@
             this.btvAjouter.Name = "btvAjouter";
             this.btvAjouter.Size = new System.Drawing.Size(95, 38);
             this.btvAjouter.TabIndex = 16;
-            this.btvAjouter.Text = "ajouter";
+            this.btvAjouter.Text = "&Ajouter";
             this.btvAjouter.UseVisualStyleBackColor = true;
             this.btvAjouter.Click += new System.EventHandler(this.btvValider_Click);
             // 
@@ -193,7 +193,7 @@
             this.btnMettreAJour.Name = "btnMettreAJour";
             this.btnMettreAJour.Size = new System.Drawing.Size(139, 44);
             this.btnMettreAJour.TabIndex = 17;
-            this.btnMettreAJour.Text = "Mettre à jour";
+            this.btnMettreAJour.Text = "&Mettre à jour";
             this.btnMettreAJour.UseVisualStyleBackColor = true;
             this.btnMettreAJour.Click += new System.EventHandler(this.btnMettreAJour_Click);
             // 
@@ -203,7 +203,7 @@
             this.BtnSupprimer.Name = "BtnSupprimer";
             this.BtnSupprimer.Size = new System.Drawing.Size(97, 35);
             this.BtnSupprimer.TabIndex = 18;
-            this.BtnSupprimer.Text = "supprimer";
+            this.BtnSupprimer.Text = "&Supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = true;
             this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
             // 

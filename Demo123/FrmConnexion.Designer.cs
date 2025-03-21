@@ -73,7 +73,7 @@
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(108, 43);
             this.btnConnexion.TabIndex = 4;
-            this.btnConnexion.Text = "connexion";
+            this.btnConnexion.Text = "&Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
             this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
@@ -89,6 +89,7 @@
             this.Controls.Add(this.lblNom);
             this.Name = "FrmConnexion";
             this.Text = "FrmConnexion";
+            this.Load += new System.EventHandler(this.FrmConnexion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

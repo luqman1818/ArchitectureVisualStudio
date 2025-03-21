@@ -22,5 +22,10 @@ namespace Demo123
             frmApp f=new frmApp();
             f.Show();
         }
+
+        private void FrmConnexion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
