@@ -195,6 +195,7 @@
             this.btnMettreAJour.TabIndex = 17;
             this.btnMettreAJour.Text = "Mettre à jour";
             this.btnMettreAJour.UseVisualStyleBackColor = true;
+            this.btnMettreAJour.Click += new System.EventHandler(this.btnMettreAJour_Click);
             // 
             // BtnSupprimer
             // 
@@ -204,6 +205,7 @@
             this.BtnSupprimer.TabIndex = 18;
             this.BtnSupprimer.Text = "supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = true;
+            this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
             // 
             // frmAjoutEmploye
             // 

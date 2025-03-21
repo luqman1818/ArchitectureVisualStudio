@@ -47,7 +47,7 @@ namespace Demo123
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmAjoutUser f=new frmAjoutUser();
+            frmAjoutUser f=new frmAjoutUser(true);
             f.Show();
         }
 
@@ -66,7 +66,7 @@ namespace Demo123
         {
             if(e.RowIndex >= 0)
             {
-                using( frmModifUser f=new frmModifUser())
+                using( frmAjoutUser f=new frmAjoutUser())
                 {
                     f.ShowDialog();
                 }

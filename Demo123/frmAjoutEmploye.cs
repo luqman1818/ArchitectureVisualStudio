@@ -30,5 +30,15 @@ namespace Demo123
         {
 
         }
+
+        private void btnMettreAJour_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSupprimer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

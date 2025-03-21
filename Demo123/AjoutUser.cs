@@ -12,9 +12,13 @@ namespace Demo123
 {
     public partial class frmAjoutUser : Form
     {
-        public frmAjoutUser()
+        public frmAjoutUser(Boolean modif = false)
         {
             InitializeComponent();
+            btnMettreAjour.Visible = !modif;
+            btnSupprimer.Visible = !modif;
+            btnAjouter.Visible = modif;
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,6 +27,16 @@ namespace Demo123
         }
 
         private void btnValider_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMettreAjour_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
         {
             this.Close();
         }

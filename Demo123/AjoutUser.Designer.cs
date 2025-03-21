@@ -40,7 +40,9 @@
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.txtLocalite = new System.Windows.Forms.TextBox();
             this.txtMdp = new System.Windows.Forms.TextBox();
-            this.btnValider = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnMettreAjour = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPrenom
@@ -140,22 +142,44 @@
             this.txtMdp.Size = new System.Drawing.Size(100, 26);
             this.txtMdp.TabIndex = 11;
             // 
-            // btnValider
+            // btnAjouter
             // 
-            this.btnValider.Location = new System.Drawing.Point(503, 343);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(124, 44);
-            this.btnValider.TabIndex = 12;
-            this.btnValider.Text = "valider";
-            this.btnValider.UseVisualStyleBackColor = true;
-            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
+            this.btnAjouter.Location = new System.Drawing.Point(520, 81);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(124, 44);
+            this.btnAjouter.TabIndex = 12;
+            this.btnAjouter.Text = "ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnValider_Click);
+            // 
+            // btnMettreAjour
+            // 
+            this.btnMettreAjour.Location = new System.Drawing.Point(520, 152);
+            this.btnMettreAjour.Name = "btnMettreAjour";
+            this.btnMettreAjour.Size = new System.Drawing.Size(124, 44);
+            this.btnMettreAjour.TabIndex = 13;
+            this.btnMettreAjour.Text = "Mettre à jour";
+            this.btnMettreAjour.UseVisualStyleBackColor = true;
+            this.btnMettreAjour.Click += new System.EventHandler(this.btnMettreAjour_Click);
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(520, 233);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(124, 43);
+            this.btnSupprimer.TabIndex = 14;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // frmAjoutUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnValider);
+            this.Controls.Add(this.btnSupprimer);
+            this.Controls.Add(this.btnMettreAjour);
+            this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.txtMdp);
             this.Controls.Add(this.txtLocalite);
             this.Controls.Add(this.txtAdresse);
@@ -189,6 +213,8 @@
         private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.TextBox txtLocalite;
         private System.Windows.Forms.TextBox txtMdp;
-        private System.Windows.Forms.Button btnValider;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnMettreAjour;
+        private System.Windows.Forms.Button btnSupprimer;
     }
 }
