@@ -54,7 +54,7 @@
             this.lblTaille.Location = new System.Drawing.Point(107, 135);
             this.lblTaille.Name = "lblTaille";
             this.lblTaille.Size = new System.Drawing.Size(41, 20);
-            this.lblTaille.TabIndex = 1;
+            this.lblTaille.TabIndex = 2;
             this.lblTaille.Text = "taille";
             // 
             // lblPrix
@@ -63,7 +63,7 @@
             this.lblPrix.Location = new System.Drawing.Point(107, 210);
             this.lblPrix.Name = "lblPrix";
             this.lblPrix.Size = new System.Drawing.Size(33, 20);
-            this.lblPrix.TabIndex = 2;
+            this.lblPrix.TabIndex = 4;
             this.lblPrix.Text = "prix";
             // 
             // txtNomClub
@@ -71,14 +71,14 @@
             this.txtNomClub.Location = new System.Drawing.Point(271, 57);
             this.txtNomClub.Name = "txtNomClub";
             this.txtNomClub.Size = new System.Drawing.Size(100, 26);
-            this.txtNomClub.TabIndex = 3;
+            this.txtNomClub.TabIndex = 1;
             // 
             // txtTaille
             // 
             this.txtTaille.Location = new System.Drawing.Point(271, 135);
             this.txtTaille.Name = "txtTaille";
             this.txtTaille.Size = new System.Drawing.Size(100, 26);
-            this.txtTaille.TabIndex = 4;
+            this.txtTaille.TabIndex = 3;
             // 
             // txtPrix
             // 
@@ -91,28 +91,31 @@
             // 
             this.btnAjouter.Location = new System.Drawing.Point(541, 64);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(111, 41);
+            this.btnAjouter.Size = new System.Drawing.Size(152, 41);
             this.btnAjouter.TabIndex = 6;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnMettreAJour
             // 
             this.btnMettreAJour.Location = new System.Drawing.Point(541, 135);
             this.btnMettreAJour.Name = "btnMettreAJour";
-            this.btnMettreAJour.Size = new System.Drawing.Size(95, 34);
+            this.btnMettreAJour.Size = new System.Drawing.Size(152, 34);
             this.btnMettreAJour.TabIndex = 7;
             this.btnMettreAJour.Text = "Mettre à jour";
             this.btnMettreAJour.UseVisualStyleBackColor = true;
+            this.btnMettreAJour.Click += new System.EventHandler(this.btnMettreAJour_Click);
             // 
             // btnSupprimer
             // 
             this.btnSupprimer.Location = new System.Drawing.Point(541, 210);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(107, 33);
+            this.btnSupprimer.Size = new System.Drawing.Size(152, 33);
             this.btnSupprimer.TabIndex = 8;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // frmAjoutCommande
             // 
@@ -130,6 +133,7 @@
             this.Controls.Add(this.lblNomClub);
             this.Name = "frmAjoutCommande";
             this.Text = "frmAjoutCommande";
+            this.Load += new System.EventHandler(this.frmAjoutCommande_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

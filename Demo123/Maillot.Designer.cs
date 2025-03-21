@@ -60,7 +60,7 @@
             this.dgvMaillot.RowHeadersWidth = 62;
             this.dgvMaillot.RowTemplate.Height = 28;
             this.dgvMaillot.Size = new System.Drawing.Size(866, 150);
-            this.dgvMaillot.TabIndex = 2;
+            this.dgvMaillot.TabIndex = 0;
             this.dgvMaillot.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // id
@@ -95,7 +95,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 520);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1148, 520);
             this.Controls.Add(this.dgvMaillot);
             this.Controls.Add(this.btnAjoutMaillot);
             this.Name = "frmMaillot";
