@@ -62,10 +62,11 @@
             this.localite,
             this.mdp});
             this.dgvUser.Location = new System.Drawing.Point(12, 104);
+            this.dgvUser.MinimumSize = new System.Drawing.Size(1105, 150);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersWidth = 62;
             this.dgvUser.RowTemplate.Height = 28;
-            this.dgvUser.Size = new System.Drawing.Size(1051, 150);
+            this.dgvUser.Size = new System.Drawing.Size(1105, 150);
             this.dgvUser.TabIndex = 0;
             this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick_2);
             // 
@@ -123,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1098, 391);
+            this.ClientSize = new System.Drawing.Size(1150, 518);
             this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.btnAjout);
             this.Name = "frmUser";

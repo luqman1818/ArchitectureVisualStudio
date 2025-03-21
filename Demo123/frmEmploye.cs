@@ -27,7 +27,7 @@ namespace Demo123
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             frmAjoutEmploye frmAjoutEmploye = new frmAjoutEmploye(true);
-            frmAjoutEmploye.Show();
+            frmAjoutEmploye.ShowDialog();
         }
 
         private void dgvEmploye_CellContentClick(object sender, DataGridViewCellEventArgs e)

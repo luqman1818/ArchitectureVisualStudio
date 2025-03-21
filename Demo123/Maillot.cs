@@ -28,7 +28,7 @@ namespace Demo123
         private void btnAjoutMaillot_Click(object sender, EventArgs e)
         {
             frmAjoutMaillot frm = new frmAjoutMaillot(true);
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

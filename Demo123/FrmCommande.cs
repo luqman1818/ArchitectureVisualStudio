@@ -38,7 +38,7 @@ namespace Demo123
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             frmAjoutCommande frmAjoutCommande   = new frmAjoutCommande(true);
-            frmAjoutCommande.Show();
+            frmAjoutCommande.ShowDialog();
         }
     }
 }
