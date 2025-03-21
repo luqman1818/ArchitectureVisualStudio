@@ -45,5 +45,10 @@ namespace Demo123
         {
 
         }
+
+        private void lblLocalité_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

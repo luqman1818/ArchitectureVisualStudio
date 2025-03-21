@@ -57,7 +57,7 @@
             this.dgvEmploye.Name = "dgvEmploye";
             this.dgvEmploye.RowHeadersWidth = 62;
             this.dgvEmploye.RowTemplate.Height = 28;
-            this.dgvEmploye.Size = new System.Drawing.Size(1036, 150);
+            this.dgvEmploye.Size = new System.Drawing.Size(1094, 150);
             this.dgvEmploye.TabIndex = 0;
             this.dgvEmploye.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmploye_CellContentClick);
             // 
@@ -131,7 +131,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1138, 450);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.dgvEmploye);
             this.Name = "frmEmploye";

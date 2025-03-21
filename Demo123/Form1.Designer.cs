@@ -47,35 +47,35 @@
             this.gestionEmployéToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(169, 29);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(169, 30);
             this.ouvrirToolStripMenuItem.Text = "Gestion utilisateur";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
             // gestionMaillotToolStripMenuItem
             // 
             this.gestionMaillotToolStripMenuItem.Name = "gestionMaillotToolStripMenuItem";
-            this.gestionMaillotToolStripMenuItem.Size = new System.Drawing.Size(147, 29);
+            this.gestionMaillotToolStripMenuItem.Size = new System.Drawing.Size(147, 30);
             this.gestionMaillotToolStripMenuItem.Text = "Gestion maillot";
             this.gestionMaillotToolStripMenuItem.Click += new System.EventHandler(this.gestionMaillotToolStripMenuItem_Click);
             // 
             // gestionCommandeToolStripMenuItem
             // 
             this.gestionCommandeToolStripMenuItem.Name = "gestionCommandeToolStripMenuItem";
-            this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(183, 29);
+            this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
             this.gestionCommandeToolStripMenuItem.Text = "Gestion commande";
             this.gestionCommandeToolStripMenuItem.Click += new System.EventHandler(this.gestionCommandeToolStripMenuItem_Click);
             // 
             // gestionEmployéToolStripMenuItem
             // 
             this.gestionEmployéToolStripMenuItem.Name = "gestionEmployéToolStripMenuItem";
-            this.gestionEmployéToolStripMenuItem.Size = new System.Drawing.Size(162, 29);
+            this.gestionEmployéToolStripMenuItem.Size = new System.Drawing.Size(162, 30);
             this.gestionEmployéToolStripMenuItem.Text = "Gestion employé";
             this.gestionEmployéToolStripMenuItem.Click += new System.EventHandler(this.gestionEmployéToolStripMenuItem_Click);
             // 
@@ -83,6 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

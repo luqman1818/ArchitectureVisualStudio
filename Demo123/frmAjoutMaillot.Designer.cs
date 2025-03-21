@@ -61,7 +61,7 @@
             // lblTaille
             // 
             this.lblTaille.AutoSize = true;
-            this.lblTaille.Location = new System.Drawing.Point(90, 183);
+            this.lblTaille.Location = new System.Drawing.Point(86, 183);
             this.lblTaille.Name = "lblTaille";
             this.lblTaille.Size = new System.Drawing.Size(41, 20);
             this.lblTaille.TabIndex = 4;
@@ -83,16 +83,16 @@
             // 
             // txtTaille
             // 
-            this.txtTaille.Location = new System.Drawing.Point(235, 183);
+            this.txtTaille.Location = new System.Drawing.Point(235, 185);
             this.txtTaille.Name = "txtTaille";
             this.txtTaille.Size = new System.Drawing.Size(100, 26);
             this.txtTaille.TabIndex = 5;
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(529, 82);
+            this.btnAjouter.Location = new System.Drawing.Point(529, 90);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(121, 56);
+            this.btnAjouter.Size = new System.Drawing.Size(121, 48);
             this.btnAjouter.TabIndex = 6;
             this.btnAjouter.Text = "&Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@
             // 
             // btnMettreAJour
             // 
-            this.btnMettreAJour.Location = new System.Drawing.Point(529, 185);
+            this.btnMettreAJour.Location = new System.Drawing.Point(529, 183);
             this.btnMettreAJour.Name = "btnMettreAJour";
             this.btnMettreAJour.Size = new System.Drawing.Size(121, 48);
             this.btnMettreAJour.TabIndex = 7;
@@ -122,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnMettreAJour);

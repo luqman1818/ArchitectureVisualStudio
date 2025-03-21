@@ -38,7 +38,7 @@
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(74, 89);
+            this.lblNom.Location = new System.Drawing.Point(78, 89);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(40, 20);
             this.lblNom.TabIndex = 0;
@@ -69,6 +69,7 @@
             // 
             // btnConnexion
             // 
+            this.btnConnexion.AutoSize = true;
             this.btnConnexion.Location = new System.Drawing.Point(539, 309);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(108, 43);

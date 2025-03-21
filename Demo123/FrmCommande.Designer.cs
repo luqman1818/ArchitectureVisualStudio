@@ -92,6 +92,7 @@
             // 
             // btnAjouter
             // 
+            this.btnAjouter.AutoSize = true;
             this.btnAjouter.Location = new System.Drawing.Point(688, 332);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(164, 47);
@@ -112,6 +113,7 @@
             this.Load += new System.EventHandler(this.FrmCommande_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCommande)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

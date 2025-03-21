@@ -48,7 +48,7 @@
             // lblPrenom
             // 
             this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(64, 64);
+            this.lblPrenom.Location = new System.Drawing.Point(54, 64);
             this.lblPrenom.Name = "lblPrenom";
             this.lblPrenom.Size = new System.Drawing.Size(63, 20);
             this.lblPrenom.TabIndex = 0;
@@ -65,7 +65,7 @@
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(64, 105);
+            this.lblNom.Location = new System.Drawing.Point(54, 120);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(40, 20);
             this.lblNom.TabIndex = 2;
@@ -74,7 +74,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(64, 135);
+            this.lblDate.Location = new System.Drawing.Point(54, 185);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(41, 20);
             this.lblDate.TabIndex = 4;
@@ -83,7 +83,7 @@
             // lblAdresse
             // 
             this.lblAdresse.AutoSize = true;
-            this.lblAdresse.Location = new System.Drawing.Point(64, 168);
+            this.lblAdresse.Location = new System.Drawing.Point(54, 250);
             this.lblAdresse.Name = "lblAdresse";
             this.lblAdresse.Size = new System.Drawing.Size(66, 20);
             this.lblAdresse.TabIndex = 6;
@@ -92,16 +92,17 @@
             // lblLocalité
             // 
             this.lblLocalité.AutoSize = true;
-            this.lblLocalité.Location = new System.Drawing.Point(64, 201);
+            this.lblLocalité.Location = new System.Drawing.Point(54, 315);
             this.lblLocalité.Name = "lblLocalité";
             this.lblLocalité.Size = new System.Drawing.Size(58, 20);
             this.lblLocalité.TabIndex = 8;
             this.lblLocalité.Text = "localité";
+            this.lblLocalité.Click += new System.EventHandler(this.lblLocalité_Click);
             // 
             // lblMdp
             // 
             this.lblMdp.AutoSize = true;
-            this.lblMdp.Location = new System.Drawing.Point(64, 237);
+            this.lblMdp.Location = new System.Drawing.Point(54, 378);
             this.lblMdp.Name = "lblMdp";
             this.lblMdp.Size = new System.Drawing.Size(105, 20);
             this.lblMdp.TabIndex = 10;
@@ -109,42 +110,42 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(212, 106);
+            this.txtNom.Location = new System.Drawing.Point(212, 120);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(100, 26);
             this.txtNom.TabIndex = 3;
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(212, 138);
+            this.txtDate.Location = new System.Drawing.Point(212, 185);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(100, 26);
             this.txtDate.TabIndex = 5;
             // 
             // txtAdresse
             // 
-            this.txtAdresse.Location = new System.Drawing.Point(212, 170);
+            this.txtAdresse.Location = new System.Drawing.Point(212, 250);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(100, 26);
             this.txtAdresse.TabIndex = 7;
             // 
             // txtLocalite
             // 
-            this.txtLocalite.Location = new System.Drawing.Point(212, 205);
+            this.txtLocalite.Location = new System.Drawing.Point(212, 315);
             this.txtLocalite.Name = "txtLocalite";
             this.txtLocalite.Size = new System.Drawing.Size(100, 26);
             this.txtLocalite.TabIndex = 9;
             // 
             // txtMdp
             // 
-            this.txtMdp.Location = new System.Drawing.Point(212, 237);
+            this.txtMdp.Location = new System.Drawing.Point(212, 378);
             this.txtMdp.Name = "txtMdp";
             this.txtMdp.Size = new System.Drawing.Size(100, 26);
             this.txtMdp.TabIndex = 11;
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(520, 81);
+            this.btnAjouter.Location = new System.Drawing.Point(520, 64);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(124, 44);
             this.btnAjouter.TabIndex = 12;
@@ -154,7 +155,7 @@
             // 
             // btnMettreAjour
             // 
-            this.btnMettreAjour.Location = new System.Drawing.Point(520, 152);
+            this.btnMettreAjour.Location = new System.Drawing.Point(520, 185);
             this.btnMettreAjour.Name = "btnMettreAjour";
             this.btnMettreAjour.Size = new System.Drawing.Size(124, 44);
             this.btnMettreAjour.TabIndex = 13;
@@ -164,7 +165,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(520, 233);
+            this.btnSupprimer.Location = new System.Drawing.Point(520, 315);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(124, 43);
             this.btnSupprimer.TabIndex = 14;
@@ -176,6 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnMettreAjour);

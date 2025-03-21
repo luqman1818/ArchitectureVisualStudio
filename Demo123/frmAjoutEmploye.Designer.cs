@@ -179,9 +179,9 @@
             // 
             // btvAjouter
             // 
-            this.btvAjouter.Location = new System.Drawing.Point(599, 148);
+            this.btvAjouter.Location = new System.Drawing.Point(578, 59);
             this.btvAjouter.Name = "btvAjouter";
-            this.btvAjouter.Size = new System.Drawing.Size(95, 38);
+            this.btvAjouter.Size = new System.Drawing.Size(139, 38);
             this.btvAjouter.TabIndex = 16;
             this.btvAjouter.Text = "&Ajouter";
             this.btvAjouter.UseVisualStyleBackColor = true;
@@ -189,7 +189,7 @@
             // 
             // btnMettreAJour
             // 
-            this.btnMettreAJour.Location = new System.Drawing.Point(578, 217);
+            this.btnMettreAJour.Location = new System.Drawing.Point(578, 177);
             this.btnMettreAJour.Name = "btnMettreAJour";
             this.btnMettreAJour.Size = new System.Drawing.Size(139, 44);
             this.btnMettreAJour.TabIndex = 17;
@@ -199,9 +199,9 @@
             // 
             // BtnSupprimer
             // 
-            this.BtnSupprimer.Location = new System.Drawing.Point(599, 299);
+            this.BtnSupprimer.Location = new System.Drawing.Point(578, 311);
             this.BtnSupprimer.Name = "BtnSupprimer";
-            this.BtnSupprimer.Size = new System.Drawing.Size(97, 35);
+            this.BtnSupprimer.Size = new System.Drawing.Size(139, 35);
             this.BtnSupprimer.TabIndex = 18;
             this.BtnSupprimer.Text = "&Supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = true;
@@ -211,6 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnSupprimer);
             this.Controls.Add(this.btnMettreAJour);

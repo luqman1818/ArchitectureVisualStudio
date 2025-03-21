@@ -51,7 +51,7 @@
             // lblTaille
             // 
             this.lblTaille.AutoSize = true;
-            this.lblTaille.Location = new System.Drawing.Point(107, 135);
+            this.lblTaille.Location = new System.Drawing.Point(103, 135);
             this.lblTaille.Name = "lblTaille";
             this.lblTaille.Size = new System.Drawing.Size(41, 20);
             this.lblTaille.TabIndex = 2;
@@ -60,7 +60,7 @@
             // lblPrix
             // 
             this.lblPrix.AutoSize = true;
-            this.lblPrix.Location = new System.Drawing.Point(107, 210);
+            this.lblPrix.Location = new System.Drawing.Point(103, 204);
             this.lblPrix.Name = "lblPrix";
             this.lblPrix.Size = new System.Drawing.Size(33, 20);
             this.lblPrix.TabIndex = 4;
@@ -68,7 +68,7 @@
             // 
             // txtNomClub
             // 
-            this.txtNomClub.Location = new System.Drawing.Point(271, 57);
+            this.txtNomClub.Location = new System.Drawing.Point(271, 64);
             this.txtNomClub.Name = "txtNomClub";
             this.txtNomClub.Size = new System.Drawing.Size(100, 26);
             this.txtNomClub.TabIndex = 1;
@@ -109,7 +109,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(541, 210);
+            this.btnSupprimer.Location = new System.Drawing.Point(541, 204);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(152, 33);
             this.btnSupprimer.TabIndex = 8;
@@ -121,6 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnMettreAJour);
