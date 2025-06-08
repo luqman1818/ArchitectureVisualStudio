@@ -59,6 +59,7 @@
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(100, 26);
             this.txtNom.TabIndex = 1;
+            this.txtNom.Text = "admin@example.com";
             // 
             // txtMdp
             // 
@@ -66,6 +67,7 @@
             this.txtMdp.Name = "txtMdp";
             this.txtMdp.Size = new System.Drawing.Size(100, 26);
             this.txtMdp.TabIndex = 3;
+            this.txtMdp.Text = "secret123";
             // 
             // btnConnexion
             // 

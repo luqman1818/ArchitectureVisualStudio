@@ -34,6 +34,7 @@
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.taille = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSupprimer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaillot)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +42,7 @@
             // 
             this.btnAjoutMaillot.Location = new System.Drawing.Point(426, 401);
             this.btnAjoutMaillot.Name = "btnAjoutMaillot";
-            this.btnAjoutMaillot.Size = new System.Drawing.Size(153, 40);
+            this.btnAjoutMaillot.Size = new System.Drawing.Size(227, 40);
             this.btnAjoutMaillot.TabIndex = 1;
             this.btnAjoutMaillot.Text = "&Ajouter des maillots";
             this.btnAjoutMaillot.UseVisualStyleBackColor = true;
@@ -59,12 +60,13 @@
             this.dgvMaillot.Name = "dgvMaillot";
             this.dgvMaillot.RowHeadersWidth = 62;
             this.dgvMaillot.RowTemplate.Height = 28;
-            this.dgvMaillot.Size = new System.Drawing.Size(866, 150);
+            this.dgvMaillot.Size = new System.Drawing.Size(940, 263);
             this.dgvMaillot.TabIndex = 0;
             this.dgvMaillot.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // id
             // 
+            this.id.DataPropertyName = "id_shi";
             this.id.HeaderText = "id";
             this.id.MinimumWidth = 8;
             this.id.Name = "id";
@@ -72,6 +74,7 @@
             // 
             // nom
             // 
+            this.nom.DataPropertyName = "nom_shi";
             this.nom.HeaderText = "nom";
             this.nom.MinimumWidth = 8;
             this.nom.Name = "nom";
@@ -79,6 +82,7 @@
             // 
             // taille
             // 
+            this.taille.DataPropertyName = "taille_shi";
             this.taille.HeaderText = "taille";
             this.taille.MinimumWidth = 8;
             this.taille.Name = "taille";
@@ -86,10 +90,21 @@
             // 
             // prix
             // 
+            this.prix.DataPropertyName = "prix_shi";
             this.prix.HeaderText = "prix";
             this.prix.MinimumWidth = 8;
             this.prix.Name = "prix";
             this.prix.Width = 150;
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(706, 404);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(107, 34);
+            this.btnSupprimer.TabIndex = 2;
+            this.btnSupprimer.Text = "Supprimer maillot";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click_1);
             // 
             // frmMaillot
             // 
@@ -97,6 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1148, 520);
+            this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.dgvMaillot);
             this.Controls.Add(this.btnAjoutMaillot);
             this.Name = "frmMaillot";
@@ -110,6 +126,7 @@
         #endregion
         private System.Windows.Forms.Button btnAjoutMaillot;
         private System.Windows.Forms.DataGridView dgvMaillot;
+        private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn taille;

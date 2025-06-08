@@ -54,28 +54,28 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(169, 30);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(169, 29);
             this.ouvrirToolStripMenuItem.Text = "Gestion utilisateur";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
             // gestionMaillotToolStripMenuItem
             // 
             this.gestionMaillotToolStripMenuItem.Name = "gestionMaillotToolStripMenuItem";
-            this.gestionMaillotToolStripMenuItem.Size = new System.Drawing.Size(147, 30);
+            this.gestionMaillotToolStripMenuItem.Size = new System.Drawing.Size(147, 29);
             this.gestionMaillotToolStripMenuItem.Text = "Gestion maillot";
             this.gestionMaillotToolStripMenuItem.Click += new System.EventHandler(this.gestionMaillotToolStripMenuItem_Click);
             // 
             // gestionCommandeToolStripMenuItem
             // 
             this.gestionCommandeToolStripMenuItem.Name = "gestionCommandeToolStripMenuItem";
-            this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
+            this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(183, 29);
             this.gestionCommandeToolStripMenuItem.Text = "Gestion commande";
             this.gestionCommandeToolStripMenuItem.Click += new System.EventHandler(this.gestionCommandeToolStripMenuItem_Click);
             // 
             // gestionEmployéToolStripMenuItem
             // 
             this.gestionEmployéToolStripMenuItem.Name = "gestionEmployéToolStripMenuItem";
-            this.gestionEmployéToolStripMenuItem.Size = new System.Drawing.Size(162, 30);
+            this.gestionEmployéToolStripMenuItem.Size = new System.Drawing.Size(162, 29);
             this.gestionEmployéToolStripMenuItem.Text = "Gestion employé";
             this.gestionEmployéToolStripMenuItem.Click += new System.EventHandler(this.gestionEmployéToolStripMenuItem_Click);
             // 

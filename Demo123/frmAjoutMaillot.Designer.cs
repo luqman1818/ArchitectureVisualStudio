@@ -37,6 +37,8 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnMettreAJour = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNom
@@ -118,12 +120,30 @@
             this.btnSupprimer.UseVisualStyleBackColor = true;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(235, 252);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 26);
+            this.txtId.TabIndex = 9;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(86, 258);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(21, 20);
+            this.lblId.TabIndex = 10;
+            this.lblId.Text = "id";
+            // 
             // frmAjoutMaillot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnMettreAJour);
             this.Controls.Add(this.btnAjouter);
@@ -152,5 +172,7 @@
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnMettreAJour;
         private System.Windows.Forms.Button btnSupprimer;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblId;
     }
 }

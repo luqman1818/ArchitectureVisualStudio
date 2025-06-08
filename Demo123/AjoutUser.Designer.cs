@@ -33,16 +33,19 @@
             this.lblNom = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblAdresse = new System.Windows.Forms.Label();
-            this.lblLocalité = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.lblMdp = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.txtDate = new System.Windows.Forms.TextBox();
             this.txtAdresse = new System.Windows.Forms.TextBox();
-            this.txtLocalite = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtMdp = new System.Windows.Forms.TextBox();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnMettreAjour = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
+            this.dtpNaissance = new System.Windows.Forms.DateTimePicker();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPrenom
@@ -74,7 +77,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(54, 185);
+            this.lblDate.Location = new System.Drawing.Point(54, 159);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(41, 20);
             this.lblDate.TabIndex = 4;
@@ -89,15 +92,15 @@
             this.lblAdresse.TabIndex = 6;
             this.lblAdresse.Text = "adresse";
             // 
-            // lblLocalité
+            // lblEmail
             // 
-            this.lblLocalité.AutoSize = true;
-            this.lblLocalité.Location = new System.Drawing.Point(54, 315);
-            this.lblLocalité.Name = "lblLocalité";
-            this.lblLocalité.Size = new System.Drawing.Size(58, 20);
-            this.lblLocalité.TabIndex = 8;
-            this.lblLocalité.Text = "localité";
-            this.lblLocalité.Click += new System.EventHandler(this.lblLocalité_Click);
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(54, 315);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(46, 20);
+            this.lblEmail.TabIndex = 8;
+            this.lblEmail.Text = "email";
+            this.lblEmail.Click += new System.EventHandler(this.lblLocalité_Click);
             // 
             // lblMdp
             // 
@@ -117,7 +120,7 @@
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(212, 185);
+            this.txtDate.Location = new System.Drawing.Point(212, 194);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(100, 26);
             this.txtDate.TabIndex = 5;
@@ -129,12 +132,12 @@
             this.txtAdresse.Size = new System.Drawing.Size(100, 26);
             this.txtAdresse.TabIndex = 7;
             // 
-            // txtLocalite
+            // txtEmail
             // 
-            this.txtLocalite.Location = new System.Drawing.Point(212, 315);
-            this.txtLocalite.Name = "txtLocalite";
-            this.txtLocalite.Size = new System.Drawing.Size(100, 26);
-            this.txtLocalite.TabIndex = 9;
+            this.txtEmail.Location = new System.Drawing.Point(212, 315);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 26);
+            this.txtEmail.TabIndex = 9;
             // 
             // txtMdp
             // 
@@ -173,22 +176,48 @@
             this.btnSupprimer.UseVisualStyleBackColor = true;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
+            // dtpNaissance
+            // 
+            this.dtpNaissance.Location = new System.Drawing.Point(212, 154);
+            this.dtpNaissance.Name = "dtpNaissance";
+            this.dtpNaissance.Size = new System.Drawing.Size(200, 26);
+            this.dtpNaissance.TabIndex = 15;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(212, 23);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 26);
+            this.txtId.TabIndex = 16;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(58, 23);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(21, 20);
+            this.lblId.TabIndex = 17;
+            this.lblId.Text = "id";
+            // 
             // frmAjoutUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.dtpNaissance);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnMettreAjour);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.txtMdp);
-            this.Controls.Add(this.txtLocalite);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtAdresse);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.txtNom);
             this.Controls.Add(this.lblMdp);
-            this.Controls.Add(this.lblLocalité);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblAdresse);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblNom);
@@ -209,15 +238,18 @@
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblAdresse;
-        private System.Windows.Forms.Label lblLocalité;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblMdp;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.TextBox txtAdresse;
-        private System.Windows.Forms.TextBox txtLocalite;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtMdp;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnMettreAjour;
         private System.Windows.Forms.Button btnSupprimer;
+        private System.Windows.Forms.DateTimePicker dtpNaissance;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblId;
     }
 }

@@ -15,9 +15,9 @@ namespace Demo123
         public frmAjoutCommande(Boolean modif = false)
         {
             InitializeComponent();
-            btnSupprimer.Visible = !modif;
-            btnMettreAJour.Visible = !modif;
-            btnAjouter.Visible = modif;
+            //btnSupprimer.Visible = !modif;
+            //btnMettreAJour.Visible = !modif;
+            //btnAjouter.Visible = modif;
         }
 
         private void frmAjoutCommande_Load(object sender, EventArgs e)
@@ -27,7 +27,8 @@ namespace Demo123
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+
         }
 
         private void btnMettreAJour_Click(object sender, EventArgs e)

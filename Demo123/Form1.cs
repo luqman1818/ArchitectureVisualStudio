@@ -17,6 +17,12 @@ namespace Demo123
             InitializeComponent();
         }
 
+        private void connexionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConnexion connectionForm = new FrmConnexion();
+            connectionForm.Show();
+        }
+
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUser f = new frmUser();
@@ -38,6 +44,14 @@ namespace Demo123
 
         private void frmApp_Load(object sender, EventArgs e)
         {
+            FrmConnexion f = new FrmConnexion();
+            f.ShowDialog();
+
+            if(Storage.getToken() == "")
+            {
+                this.Close();
+
+            }
 
         }
 

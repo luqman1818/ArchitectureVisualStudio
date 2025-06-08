@@ -37,6 +37,7 @@
             this.adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.localite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mdp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSupprimer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,12 +120,23 @@
             this.mdp.Name = "mdp";
             this.mdp.Width = 150;
             // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(907, 291);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(128, 50);
+            this.btnSupprimer.TabIndex = 2;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnMettreAJour_Click);
+            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1150, 518);
+            this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.btnAjout);
             this.Name = "frmUser";
@@ -145,5 +157,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn adresse;
         private System.Windows.Forms.DataGridViewTextBoxColumn localite;
         private System.Windows.Forms.DataGridViewTextBoxColumn mdp;
+        private System.Windows.Forms.Button btnSupprimer;
     }
 }

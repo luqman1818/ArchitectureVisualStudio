@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessToken.cs" />
     <Compile Include="AjoutUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,38 +98,24 @@
     <Compile Include="frmEmploye.Designer.cs">
       <DependentUpon>frmEmploye.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmModifEmploye.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmModifEmploye.Designer.cs">
-      <DependentUpon>frmModifEmploye.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmModifMaillot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmModifMaillot.Designer.cs">
-      <DependentUpon>frmModifMaillot.cs</DependentUpon>
-    </Compile>
     <Compile Include="Maillot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Maillot.Designer.cs">
       <DependentUpon>Maillot.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModifUser.Designer.cs">
-      <DependentUpon>ModifUser.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs">
+    <Compile Include="Shirt.cs" />
+    <Compile Include="Storage.cs" />
+    <Compile Include="frmUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User.Designer.cs">
-      <DependentUpon>User.cs</DependentUpon>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="AjoutUser.resx">
       <DependentUpon>AjoutUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,17 +140,8 @@
     <EmbeddedResource Include="frmEmploye.resx">
       <DependentUpon>frmEmploye.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModifEmploye.resx">
-      <DependentUpon>frmModifEmploye.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmModifMaillot.resx">
-      <DependentUpon>frmModifMaillot.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Maillot.resx">
       <DependentUpon>Maillot.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModifUser.resx">
-      <DependentUpon>ModifUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -171,9 +152,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="User.resx">
-      <DependentUpon>User.cs</DependentUpon>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

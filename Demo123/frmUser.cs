@@ -18,39 +18,38 @@ using Newtonsoft.Json;
 
 namespace Demo123
 {
-    public partial class frmMaillot : Form
+    public partial class frmUser : Form
     {
         private static readonly HttpClient client = new HttpClient();
-
-        private List<Shirt> allShirts = new List<Shirt>();
-        public frmMaillot()
+        public frmUser()
         {
             InitializeComponent();
-            // Configuration de base une seule fois
+
             client.BaseAddress = new Uri("http://luqfoot.test/api/");
         }
 
-        private async void frmMaillot_Load(object sender, EventArgs e)
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //dgvMaillot.Rows.Add("1", "Chelsea", "S", "80");
-            //dgvMaillot.Rows.Add("2", "Ac Milan", "S", "90");
-            //dgvMaillot.Rows.Add("3", "Real Madrid", "L", "80");
+            //if(e.RowIndex >= 0)
+            //{
+            //    using(frmUser frmUser = new frmUser())
+            //    {
+            //        frmUser.ShowDialog();
+            //    }
+            //}
+
+        }
+
+        private async void frmUser_Load(object sender, EventArgs e)
+        {
+
+            //dgvUser.Rows.Add("1", "Marc", "Dupont", "12/12/2023", "Rue sonnex 13", "Grand-Saconnex", "1234");
+            //dgvUser.Rows.Add("2", "Paul", "Dupont", "12/12/2020", "Rue sonnex 12", "Grand-Saconnex", "1235");
+            //dgvUser.Rows.Add("3", "Luca", "Dupont", "12/02/2021", "Rue sonnex 11", "Grand-Saconnex", "1236");
 
             await ChargerUtilisateursAsync();
 
         }
-
-       
-
-
-
-
-        private  void btnAjoutMaillot_Click(object sender, EventArgs e)
-        {
-            frmAjoutMaillot frm = new frmAjoutMaillot(true);
-            frm.ShowDialog();
-        }
-
         private async Task ChargerUtilisateursAsync()
         {
             try
@@ -71,15 +70,13 @@ namespace Demo123
 
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                    HttpResponseMessage response = await client.GetAsync("shirts");
+                    HttpResponseMessage response = await client.GetAsync("users");
 
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonString = await response.Content.ReadAsStringAsync();
-                        var shirts = JsonConvert.DeserializeObject<List<Shirt>>(jsonString);
-
-                        //dgvMaillot.AutoGenerateColumns = false;
-                        dgvMaillot.DataSource = shirts;
+                        var shirts = JsonConvert.DeserializeObject<List<User>>(jsonString);
+                        dgvUser.DataSource = shirts;
                     }
                     else
                     {
@@ -87,7 +84,6 @@ namespace Demo123
                         MessageBox.Show("Erreur lors de la récupération : " + error);
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -97,28 +93,50 @@ namespace Demo123
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmAjoutUser f=new frmAjoutUser(true);
+            f.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frmAjoutEmploye f =new frmAjoutEmploye(true);
+            f.ShowDialog();
+        }
+
+        private void dgvUser_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+         
+        }
+
+        private void dgvUser_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
             //if(e.RowIndex >= 0)
             //{
-            //    using(frmAjoutMaillot frmAjoutMaillot = new frmAjoutMaillot())
+            //    using( frmAjoutUser f=new frmAjoutUser())
             //    {
-            //        frmAjoutMaillot.ShowDialog();
+            //        f.ShowDialog();
             //    }
             //}
         }
 
-        private async void btnSupprimer_Click_1(object sender, EventArgs e)
+        private async void btnMettreAJour_Click(object sender, EventArgs e)
         {
-            if (dgvMaillot.SelectedRows.Count == 0)
+            if (dgvUser.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Veuillez sélectionner un shirt à supprimer.");
+                MessageBox.Show("Veuillez sélectionner un utilisateur à supprimer.");
                 return;
             }
 
-            var result = MessageBox.Show("Voulez-vous vraiment supprimer ce shirt ?", "Confirmation", MessageBoxButtons.YesNo);
+            var result = MessageBox.Show("Voulez-vous vraiment supprimer cet utilisateur ?", "Confirmation", MessageBoxButtons.YesNo);
             if (result != DialogResult.Yes)
                 return;
 
-            int id = Convert.ToInt32(dgvMaillot.SelectedRows[0].Cells["id"].Value);
+            int id = Convert.ToInt32(dgvUser.SelectedRows[0].Cells["id_use"].Value);
             var token = Storage.getToken();
 
             if (string.IsNullOrEmpty(token))
@@ -136,12 +154,12 @@ namespace Demo123
                     client.BaseAddress = new Uri("http://luqfoot.test/api/");
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                    HttpResponseMessage response = await client.DeleteAsync($"shirts/{id}");
+                    HttpResponseMessage response = await client.DeleteAsync($"users/{id}");
 
                     if (response.IsSuccessStatusCode)
                     {
-                        MessageBox.Show("Shirt supprimé avec succès !");
-                        await ChargerUtilisateursAsync();
+                        MessageBox.Show("Utilisateur supprimé avec succès !");
+                        await ChargerUtilisateursAsync(); // Recharge la liste des utilisateurs
                     }
                     else
                     {
@@ -159,33 +177,5 @@ namespace Demo123
                 btnSupprimer.Enabled = true;
             }
         }
-
-    //    private void btnFiltrer_Click(object sender, EventArgs e)
-    //    {
-    //        string filtre = txtFiltreNom.Text.Trim();
-
-    //        if (string.IsNullOrEmpty(filtre))
-    //        {
-    //            dgvMaillot.DataSource = allShirts;
-    //            return;
-    //        }
-
-    //        if (int.TryParse(filtre, out int idRecherche))
-    //        {
-    //            // Filtrage par ID
-    //            var filtered = allShirts
-    //                .Where(s => s.id_shi == idRecherche)
-    //                .ToList();
-
-    //            dgvMaillot.DataSource = filtered;
-
-    //            if (filtered.Count == 0)
-    //                MessageBox.Show("Aucun maillot trouvé avec l'ID " + idRecherche);
-    //        }
-    //        else
-    //        {
-    //            MessageBox.Show("Veuillez entrer un ID valide (nombre entier).");
-    //        }
-    //    }
     }
 }
